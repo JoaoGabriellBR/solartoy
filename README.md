@@ -8,8 +8,10 @@
 O projeto **Mini Carro Solar** é uma iniciativa de tecnologia e eletrônica que visa estimular a criatividade e funciona de forma totalmente autônoma.
 
 https://solartoy.netlify.app
-<br> <br> <br>
 
+<div align="start">
+    <img width="400px" height="350px" src="https://user-images.githubusercontent.com/88870257/221101281-e2995b46-7fdf-412d-8348-30e5a70aada8.png">
+</div>
 
 ## 🛠 Tecnologias utilizadas
 
