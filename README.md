@@ -14,8 +14,10 @@ O projeto **Mini Carro Solar** é uma iniciativa de tecnologia e eletrônica que
 </div>
 
 ## Layout Web
+![desktopimage](https://user-images.githubusercontent.com/88870257/221670417-17faa8e5-014f-4d95-a0a7-63c53de21506.png)
 
 ## Layout Mobile
+![mobileimage](https://user-images.githubusercontent.com/88870257/221670407-01205b38-fb4d-40cf-9f3a-a4ba9fe6a65c.png)
 
 ## 🛠 Tecnologias utilizadas
 
