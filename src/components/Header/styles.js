@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {darkBlue } from "../../styles/colorProvider";
 
-
 export const StyledHeader = styled.header`
   grid-area: header;
   background-color: ${darkBlue};
@@ -38,5 +37,9 @@ export const StyledHeader = styled.header`
       &:hover {
           opacity: 0.7;
       }
+  }
+
+  .navbar-item-mobile {
+    cursor: pointer;
   }
 `;

@@ -29,7 +29,6 @@ export default function Proporciona() {
   return (
     <StyledSection id="proporciona">
       <h1 className="title">O que o projeto proporciona?</h1>
-
       <div className="div-cards">
         {arrayCards.map((card, index) => (
           <div key={index} className="card">

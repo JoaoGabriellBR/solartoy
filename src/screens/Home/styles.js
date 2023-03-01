@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const GridContainer = styled.div`
+  overflow: hidden;
   display: grid;
-  grid-template-rows: auto 1fr auto; // definimos a primeira e última linhas do grid para o header e footer respectivamente
-  grid-template-columns: repeat(2, 1fr); // definimos 2 colunas para o grid
+  grid-template-rows: auto 1fr auto; // definindo a primeira e última linhas do grid para o header e footer respectivamente
+  grid-template-columns: repeat(2, 1fr); // definindo 2 colunas para o grid
 
   grid-template-areas:
     "header header"
@@ -15,7 +16,7 @@ export const GridContainer = styled.div`
     "section6 section6"
     "footer footer";
 
-  min-height: 100vh; // garantimos que o container terá pelo menos a altura da viewport
+  min-height: 100vh; // garantindo que o container terá pelo menos a altura da viewport
 `;
 
 export const Header = styled.header`

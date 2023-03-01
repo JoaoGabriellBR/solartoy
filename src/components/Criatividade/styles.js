@@ -13,7 +13,7 @@ export const StyledSection = styled.section`
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
     align-items: center;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 0 0;
   }
 
   .div-gif {
@@ -22,8 +22,13 @@ export const StyledSection = styled.section`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
 
+    @media (max-width: 1000px){
+      width: 100%;
+    }
+
+  }
+  
   .div-text {
     width: 50%;
     display: flex;
@@ -31,12 +36,12 @@ export const StyledSection = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
     @media (max-width: 1000px) {
       width: 80%;
     }
   }
-
+  
   .gif {
     width: 30rem;
     height: 30rem;
