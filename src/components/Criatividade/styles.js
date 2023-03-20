@@ -8,15 +8,14 @@ export const StyledSection = styled.section`
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  padding: 5rem 40px 5rem 40px;
+  padding: 5rem 2.5rem 5rem 2.5rem;
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
     align-items: center;
-    margin: 2rem 0 0 0;
   }
 
-  .div-gif {
+  .div-image {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -26,7 +25,6 @@ export const StyledSection = styled.section`
     @media (max-width: 1000px){
       width: 100%;
     }
-
   }
   
   .div-text {
@@ -42,8 +40,8 @@ export const StyledSection = styled.section`
     }
   }
   
-  .gif {
-    width: 30rem;
-    height: 30rem;
+  .woman {
+    width: 90%;
+    height: 100%;
   }
 `;

@@ -6,7 +6,7 @@ export default function Importancia() {
   return (
     <StyledSection id="importancia">
       <div className="div-image">
-        <img className="image" src={cuboMagico} alt="Cubo mágico" />
+        <img className="image" src={cuboMagico} alt="Cubo mágico" loading="lazy" />
       </div>
       <div className="div-text">
         <h1 style={{fontSize: "2rem", margin: 0}}>Qual é a importância dos brinquedos educativos?</h1>

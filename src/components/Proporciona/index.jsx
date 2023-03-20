@@ -32,7 +32,7 @@ export default function Proporciona() {
       <div className="div-cards">
         {arrayCards.map((card, index) => (
           <div key={index} className="card">
-            <img className="card-image" src={card.image} alt={card.alt} />
+            <img className="card-image" src={card.image} alt={card.alt} loading="lazy" />
             <h1 className="card-title">{card.title}</h1>
             <p className="card-text">{card.text}</p>
           </div>

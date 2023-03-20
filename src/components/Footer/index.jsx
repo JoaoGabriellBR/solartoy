@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <StyledFooter>
-      <img className="logo" src={logo} alt="Logo Solar Toy" />
+      <img className="logo" src={logo} alt="Logo Solar Toy" loading="lazy" />
         <ul className="navbar">
           <li onClick={() => scrollTo("home")} className="navbar-item">
             Home

@@ -30,19 +30,9 @@ export default function Header() {
 
   return (
     <StyledHeader>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-          margin: "0 40px 0 40px",
-
-          height: "80px",
-        }}
-      >
+      <div className="div-header">
         <div>
-          <img className="img" src={logo} alt="Logo Solar Toy" />
+          <img className="logo" src={logo} alt="Logo Solar Toy" loading="lazy" />
         </div>
         {isMobile ? (
           <IconButton

@@ -8,7 +8,7 @@ export default function Especificaçoes() {
   return (
     <StyledSection id="especificaçoes">
       <div className="div-image">
-        <img className="minicarro" src={miniCarro} alt="Foto mini carro" />
+        <img className="minicarro" src={miniCarro} alt="Foto mini carro" loading="lazy" />
       </div>
 
       <div className="div-accordions">

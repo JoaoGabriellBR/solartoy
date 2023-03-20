@@ -12,7 +12,7 @@ export default function AlemDisso(){
           <p style={{fontSize: "1.2rem"}}>Em geral, os brinquedos educativos tecnológicos podem ajudar as crianças a desenvolver habilidades importantes, a explorar novas ideias e a se preparar para um mundo cada vez mais tecnológico.</p>
         </div>
         <div className="div-image">
-          <img className="image" src={arduino} alt="Imagem arduino" />
+          <img className="image" src={arduino} alt="Imagem arduino" loading="lazy" />
         </div>
       </StyledSection>
     );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { green } from "../../styles/colorProvider";
+import { darkBlue, green } from "../../styles/colorProvider";
 
 export const StyledButton = styled.button`
     display: flex;
@@ -7,16 +7,18 @@ export const StyledButton = styled.button`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width: ${props => props.width || "200px"};
-    height: ${props => props.height || "50px"};
-    border: none;
-    border-radius: 15px;
+    width: ${props => props.width || "12.5rem"};
+    height: ${props => props.height || "3.1rem"};
+    border: 2px solid ${darkBlue};
+    border-radius: 30px;
     font-size: 18px;
-    font-weight: bold;
-    background-color: ${green};
+    font-weight: 700;
+    color: ${darkBlue};
+    background-color: transparent !important;
 
     &:hover {
-        scale: 1.1;
-        transition: ease-in-out 0.3s;
+        transition: ease-in-out 0.2s;
+        background-color: ${darkBlue} !important;
+        color: #fcfcfc;
     }
 `;

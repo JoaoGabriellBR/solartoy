@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   grid-area: section1;
-  padding: 3rem;
+  padding: 1rem;
   background: #eee;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  margin: 1.5rem 2.5rem 1.5rem 2.5rem;
 
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -43,7 +43,6 @@ export const StyledSection = styled.section`
   .text {
     font-size: 20px;
     color: #000;
-    
 
     @media (max-width: 1200px) {
       text-align: center;
@@ -65,16 +64,14 @@ export const StyledSection = styled.section`
     }
   }
 
-  .image {
-    width: 90vmin;
-    height: 80vmin;
+  .img {
+    width: 90%;
+    height: 100%;
 
     @media (max-width: 1200px) {
       width: 100%;
-      height: 100%;
     }
   }
-
 
   .div1{
     width: 50%;

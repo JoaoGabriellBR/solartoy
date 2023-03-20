@@ -5,11 +5,24 @@ export const StyledHeader = styled.header`
   grid-area: header;
   background-color: ${darkBlue};
   color: #fff;
-  padding: 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+
+  .div-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2.5rem 0 2.5rem;
+    max-height: 5rem;
+
+    @media (max-width: 1000px){
+      margin: 0 1rem 0 1rem;
+    }
+  }
   
-  .img {
-      width: 150px;
-      height: 150px;
+  .logo {
+      width: 9.3rem;
+      height: 9.3rem;
   }
 
   .navbar {

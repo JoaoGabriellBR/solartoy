@@ -26,7 +26,7 @@ export default function BrinquedoEducativo() {
       </div>
 
       <div className="div-image">
-        <img className="image" src={miniCarro} alt="Mini carro" />
+        <img className="img" src={miniCarro} alt="Mini carro" loading="lazy" />
       </div>
     </StyledSection>
   );
