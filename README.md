@@ -5,9 +5,9 @@
 
 ## Sobre o Projeto
 
-https://solartoy.netlify.app
-
 O projeto **Mini Carro Solar** é uma iniciativa de tecnologia e eletrônica que visa estimular a criatividade e funciona de forma totalmente autônoma.
+
+[![Website][Website]][Website-url]
 
 <div align="start">
     <img width="400px" height="350px" src="https://user-images.githubusercontent.com/88870257/221101281-e2995b46-7fdf-412d-8348-30e5a70aada8.png">
@@ -60,8 +60,22 @@ $ yarn add
 ```
 
 
-## Autor
+## 🔗 Links
 
-**João Gabriel da Silva Ferreira**
+[![Porfolio][Porfolio]][Porfolio-url]
+[![Linkedin][Linkedin]][Linkedin-url]
+[![Email][Email]][Email-url]
 
-https://www.linkedin.com/in/joaogabriel-silva
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Website]: https://img.shields.io/badge/site%20oficial-000000?style=for-the-badge
+[Website-url]: https://solartoy.netlify.app
+
+[Email]: https://img.shields.io/badge/-gmail-white.svg?style=for-the-badge&logo=gmail
+[Email-url]: joaoname9@gmail.com
+
+[Porfolio]: https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white
+[Porfolio-url]: https://joaogabrielsilva.vercel.app
+
+[Linkedin]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
+[Linkedin-url]: https://www.linkedin.com/in/joaogabriel-silva
