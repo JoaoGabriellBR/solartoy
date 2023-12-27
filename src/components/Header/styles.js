@@ -13,6 +13,7 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     margin: 0 2.5rem 0 2.5rem;
+    padding: 0.5rem 0rem;
     max-height: 5rem;
 
     @media (max-width: 1000px){
@@ -21,8 +22,8 @@ export const StyledHeader = styled.header`
   }
   
   .logo {
-      width: 9.3rem;
-      height: 9.3rem;
+    width: 8.5rem;
+    height: 2rem;
   }
 
   .navbar {

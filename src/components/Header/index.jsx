@@ -28,12 +28,33 @@ export default function Header() {
     });
   };
 
+  const listItems = [
+    {
+      name: "Home",
+      link: "home",
+    },
+    {
+      name: "O que proporciona?",
+      link: "proporciona",
+    },
+    {
+      name: "Especificações",
+      link: "especificaçoes",
+    },
+    {
+      name: "Importância",
+      link: "importancia",
+    },
+    {
+      name: "Arduíno",
+      link: "arduino",
+    },
+  ];
+
   return (
     <StyledHeader>
       <div className="div-header">
-        <div>
-          <img className="logo" src={logo} alt="Logo Solar Toy" loading="lazy" />
-        </div>
+        <img className="logo" src={logo} alt="Logo Solar Toy" loading="lazy" />
         {isMobile ? (
           <IconButton
             size="large"
@@ -46,74 +67,27 @@ export default function Header() {
           </IconButton>
         ) : (
           <ul className="navbar">
-            <li onClick={() => scrollTo("home")} className="navbar-item">
-              Home
-            </li>
-            <li onClick={() => scrollTo("proporciona")} className="navbar-item">
-              O que proporciona?
-            </li>
-            <li
-              onClick={() => scrollTo("especificaçoes")}
-              className="navbar-item"
-            >
-              Especificações
-            </li>
-            <li onClick={() => scrollTo("importancia")} className="navbar-item">
-              Importância
-            </li>
-            <li onClick={() => scrollTo("arduino")} className="navbar-item">
-              Arduíno
-            </li>
+            {listItems.map((item) => (
+              <li onClick={() => scrollTo(item.link)} className="navbar-item">
+                {item.name}
+              </li>
+            ))}
           </ul>
         )}
 
         <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
           <List>
-            <ListItemButton
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => scrollTo("home"), 100);
-              }}
-              className="navbar-item-mobile"
-            >
-              Home
-            </ListItemButton>
-            <ListItemButton
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => scrollTo("proporciona"), 100);
-              }}
-              className="navbar-item-mobile"
-            >
-              O que proporciona?
-            </ListItemButton>
-            <ListItemButton
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => scrollTo("especificaçoes"), 100);
-              }}
-              className="navbar-item-mobile"
-            >
-              Especificações
-            </ListItemButton>
-            <ListItemButton
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => scrollTo("importancia"), 100);
-              }}
-              className="navbar-item-mobile"
-            >
-              Importância
-            </ListItemButton>
-            <ListItemButton
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => scrollTo("arduino"), 100);
-              }}
-              className="navbar-item-mobile"
-            >
-              Arduíno
-            </ListItemButton>
+            {listItems.map((item) => (
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => scrollTo(item.link), 100);
+                }}
+                className="navbar-item-mobile"
+              >
+                {item.name}
+              </ListItemButton>
+            ))}
           </List>
         </Drawer>
       </div>

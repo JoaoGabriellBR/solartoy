@@ -20,10 +20,9 @@ export const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
 
     @media (max-width: 1000px) {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
@@ -35,22 +34,53 @@ export const StyledFooter = styled.footer`
     text-decoration: none;
 
     &:hover {
-        opacity: 0.7;
+      opacity: 0.7;
     }
 
-    @media (max-width: 1000px){
-        margin-left: -20px;
+    @media (max-width: 1000px) {
+      margin-left: -20px;
     }
   }
 
   .logo {
-    width: 150px;
-    height: 150px;
+    width: 8.5rem;
+    height: 2rem;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
   }
 
-  .copyright {
-    font-size: 12px;
+  .social-media {
+    display: flex;
+    flex-direction: row;
+
+    .icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      padding: 0 0.5rem;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .div-copyright {
+    text-align: center;
+    padding-top: 2rem;
+
+    .copyright {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .construido {
+      font-size: 10px;
+    }
+
+    .github {
+      color: #fff;
+    }
   }
 `;

@@ -1,9 +1,11 @@
 import React from "react";
 import { StyledFooter } from "./styles";
-import linkedin from "../../assets/linkedin.png";
 import logo from "../../assets/logo.png";
 
 export default function Footer() {
+
+  const year = new Date().getFullYear();
+
   const scrollTo = (section) => {
     const element = document.getElementById(section);
     element.scrollIntoView({
@@ -12,32 +14,57 @@ export default function Footer() {
     });
   };
 
+  const listItems = [
+    {
+      name: "Home",
+      link: "home"
+    },
+    {
+      name: "O que proporciona?",
+      link: "proporciona"
+    },
+    {
+      name: "Especificações",
+      link: "especificaçoes"
+    },
+    {
+      name: "Importância",
+      link: "importancia"
+    },
+    {
+      name: "Arduíno",
+      link: "arduino"
+    },
+  ]
+
   return (
     <StyledFooter>
       <img className="logo" src={logo} alt="Logo Solar Toy" loading="lazy" />
-        <ul className="navbar">
-          <li onClick={() => scrollTo("home")} className="navbar-item">
-            Home
+
+      <ul className="navbar">
+        {listItems.map((item) => (
+          <li onClick={() => scrollTo(item.link)} className="navbar-item">
+            {item.name}
           </li>
-          <li onClick={() => scrollTo("proporciona")} className="navbar-item">
-            O que proporciona?
-          </li>
-          <li
-            onClick={() => scrollTo("especificaçoes")}
-            className="navbar-item"
+        ))}
+      </ul>
+
+      <div className="div-copyright">
+        <p className="copyright">
+          {`© ${year} Solar Toy, Todos os direitos reservados.`}
+        </p>
+
+        <p className="construido">
+          Construído por{" "}
+          <a
+            className="github"
+            target="_blank"
+            href="https://github.com/JoaoGabriellBR"
           >
-            Especificações
-          </li>
-          <li onClick={() => scrollTo("importancia")} className="navbar-item">
-            Importância
-          </li>
-          <li onClick={() => scrollTo("arduino")} className="navbar-item">
-            Arduíno
-          </li>
-        </ul>
-      <p className="copyright">
-        © 2023 Solar Toy | Todos os direitos reservados.
-      </p>
+            João Gabriel Silva.
+          </a>
+        </p>
+      </div>
     </StyledFooter>
   );
 }
